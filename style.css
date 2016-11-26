@@ -1,0 +1,97 @@
+
+#ardoise
+{
+    width: 795px;
+    height: 440px;
+    border: 1px solid black;
+    cursor: none;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+.titre
+{
+    text-align: center;
+}
+
+#menu
+{
+    width: 115px ;
+    height: 450px;
+    float: left;
+    cursor: auto;
+}
+
+#imStylo
+{
+    border-radius: 5px;
+
+}
+
+#outils
+{
+    margin-top: 10px;
+    width: 115px;
+
+}
+
+#outils img
+{
+    margin-left: 15px
+}
+
+#palette
+{
+    width: 115px;
+    height: 250px;
+}
+
+#magic
+{
+    margin-top: 5px;
+    margin-left: 33px;
+    border-style: double;
+    border: 2px;
+    cursor: cell;
+}
+
+
+.carre
+{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-top: 9px;
+    margin-left: 10px;
+    cursor: cell;
+}
+
+#pointes
+{
+    width: 115px;   
+    margin-top: 3px;
+}
+
+.mine
+{
+    background-color: black;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+button
+{
+    margin-top: 20px;
+    margin-left: 18px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-style: double;
+}
+

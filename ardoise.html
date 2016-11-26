@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Magic Slate</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script type="text/javascript" src="toolbox.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	
+</head>
+<body onload="init()">
+    
+    <div class="titre"><h1>Magic Slate</h1></div>
+	
+	<div id="ardoise">
+	<div id="menu">
+		<div id="outils"> 
+			<img id="imGomme" src="gomme.png" alt="eraser" onclick="changeOutils('gomme')" >
+			<img id="imStylo" src="stylo.png" alt="pen" onclick="changeOutils('stylo')" style="background-color:#ff0000">
+		</div>
+		
+		<div id="palette">
+			<div class="carre" style="background-color:#C0C0C0" onclick="changeCouleur('#C0C0C0')"></div>
+			<div class="carre" style="background-color:#808080" onclick="changeCouleur('#808080')"></div>
+			<div class="carre" style="background-color:#fefefe" onclick="changeCouleur('#fefefe')"></div>
+			<div class="carre" style="background-color:#FFFACD" onclick="changeCouleur('#FFFACD')"></div>
+			<div class="carre" style="background-color:#0000ff" onclick="changeCouleur('#0000ff')"></div>
+			<div class="carre" style="background-color:#000080" onclick="changeCouleur('#000080')"></div>
+			<div class="carre" style="background-color:#008080" onclick="changeCouleur('#008080')"></div>
+			<div class="carre" style="background-color:#00FFFF" onclick="changeCouleur('#00FFFF')"></div>
+			<div class="carre" style="background-color:#FF00FF" onclick="changeCouleur('#FF00FF')"></div>
+			<div class="carre" style="background-color:#FFC0CB" onclick="changeCouleur('#FFC0CB')"></div>
+			<div class="carre" style="background-color:#800080" onclick="changeCouleur('#800080')"></div>
+			<div class="carre" style="background-color:#FFFF00" onclick="changeCouleur('#FFFF00')"></div>
+			<div class="carre" style="background-color:#FFD700" onclick="changeCouleur('#FFD700')"></div>
+			<div class="carre" style="background-color:#FFA500" onclick="changeCouleur('#FFA500')"></div>
+			<div class="carre" style="background-color:#800000" onclick="changeCouleur('#800000')"></div>
+			<div class="carre" style="background-color:#ff0000" onclick="changeCouleur('#ff0000')"></div>
+			<div class="carre" style="background-color:#A0522D" onclick="changeCouleur('#A0522D')"></div>
+			<div class="carre" style="background-color:#00ff00" onclick="changeCouleur('#00ff00')"></div>
+			<div class="carre" style="background-color:#008000" onclick="changeCouleur('#008000')"></div>
+			<div class="carre" style="background-color:#808000" onclick="changeCouleur('#808000')"></div>
+			<div class="carre" style="background-color:#FF6347" onclick="changeCouleur('#FF6347')">
+            </div>
+		</div>
+        
+        <input id="magic" type="color" onchange="changeMagic()">
+        
+		<div id="pointes">
+			<div class="mine" style="width:2px; height:2px" onclick="changeMine(1)"></div>
+			<div class="mine" style="width:4px; height:4px" onclick="changeMine(2)"></div>
+			<div class="mine" style="width:6px; height:6px" onclick="changeMine(4)"></div>
+			<div class="mine" style="width:8px; height:8px" onclick="changeMine(6)"></div>
+			<div class="mine" style="width:10px; height:10px" onclick="changeMine(8)"></div>
+			<div class="mine" style="width:12px; height:12px" onclick="changeMine(10)"></div>
+		</div>
+
+		<button type="button"  onclick="effacer()">Wipe</button> 	
+	</div>
+	
+	<canvas id="toile" width="680" height="440" onmousedown="poserCrayon(event)"
+		onmouseup="leverCrayon(event)" 	onmousemove="ecrire(event)">
+		
+	</canvas>
+	
+	</div>
+    
+    <div class=titre><h2>By Cookeys</h2></div>
+     
+</body>
+</html>
