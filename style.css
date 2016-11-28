@@ -50,7 +50,7 @@
 #magic
 {
     margin-top: 5px;
-    margin-left: 33px;
+    margin-left: 25px;
     border-style: double;
     border: 2px;
     cursor: cell;
@@ -86,11 +86,13 @@
 
 button
 {
-    margin-top: 20px;
-    margin-left: 18px;
+	width: 60px;
+	height: 30px;
     border-radius: 10px;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     border-style: double;
+	margin-top: 20px;
+	margin-left: 25px;
+    margin-right: auto;
 }
-
