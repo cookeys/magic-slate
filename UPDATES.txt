@@ -1,0 +1,12 @@
+Updates of version 1.2 :
+- Added a background
+- Fixed some problems w/ the alignement of the buttons
+- Removed Herobrine
+
+Updates of version 1.1 :
+- Full new design
+- Possibility of changing the size of the rubber
+- Custom colors avaible
+- Redisigned logo when the pen is selected
+- Removed Herobrine
+
