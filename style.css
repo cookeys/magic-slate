@@ -1,11 +1,18 @@
+body
+{
+    background-image: url(wallpaper.jpg);
+    background-position: center;
+}
+
 #ardoise
 {
     width: 795px;
     height: 440px;
-    border: 1px solid black;
+    border: 5px solid white;
     cursor: none;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
     
     
 }
@@ -15,12 +22,24 @@
     text-align: center;
 }
 
+
+h1
+{
+    color: white;
+}
+
+h2
+{
+    color: white
+}
+
 #menu
 {
     width: 115px ;
-    height: 450px;
+    height: 440px;
     float: left;
     cursor: auto;
+    background-color: white;
 }
 
 #imStylo
@@ -50,7 +69,10 @@
 #magic
 {
     margin-top: 5px;
-    margin-left: 25px;
+    width: 45px;
+    height: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
     border-style: double;
     border: 2px;
     cursor: cell;
@@ -90,9 +112,10 @@ button
 	height: 30px;
     border-radius: 10px;
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 15px; 
     border-style: double;
 	margin-top: 20px;
 	margin-left: 25px;
     margin-right: auto;
+    align-self: center;
 }
